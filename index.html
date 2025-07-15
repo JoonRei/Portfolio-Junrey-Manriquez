@@ -1,0 +1,454 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-brand">Portfolio</div>
+        <div class="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li class="theme-toggle-container">
+                <button class="theme-toggle" id="themeToggle">
+                    <i class="fas fa-sun"></i>
+                    <i class="fas fa-moon"></i>
+                </button>
+            </li>
+        </ul>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <div class="hero-text">
+                <div class="hero-greeting">
+                    <span class="greeting-text">Hello, Welcome to my portfolio. I'am</span>
+                </div>
+                <h1><span class="highlight">Junrey Manriquez</span></h1>
+                <div class="hero-title">
+                    <span class="static-text">I'm a </span>
+                    <span class="dynamic-text"></span>
+                </div>
+                <div class="cta-buttons">
+                    <a href="#projects" class="btn primary">View My Work</a>
+                    <a href="#contact" class="btn secondary">Contact Me</a>
+                </div>
+            </div>
+            <div class="hero-features">
+                <div class="feature-item">
+                    <i class="fas fa-paint-brush"></i>
+                    <span>Creative Design</span>
+                </div>
+                <div class="feature-item">
+                    <i class="fas fa-code"></i>
+                    <span>Clean Code</span>
+                </div>
+                <div class="feature-item">
+                    <i class="fas fa-mobile-alt"></i>
+                    <span>Responsive</span>
+                </div>
+                <div class="feature-item">
+                    <i class="fas fa-rocket"></i>
+                    <span>Fast Delivery</span>
+                </div>
+            </div>
+        </div>
+        <div class="hero-decoration">
+            <div class="shape shape-1"></div>
+            <div class="shape shape-2"></div>
+            <div class="shape shape-3"></div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <h2 class="section-title">About Me</h2>
+        <div class="about-card">
+            <div class="about-top">
+                <div class="profile-image">
+                    <img src="images/profile.jpg" alt="Junrey Manriquez">
+                </div>
+                <div class="about-main">
+                    <h3 class="about-header">Hi, I'm Junrey Manriquez</h3>
+                    <p class="about-desc">
+                        I'm a graphic designer, UI/UX designer, and web developer passionate about creating engaging digital experiences. I combine creative design principles with technical expertise to build visually appealing and functional solutions. From crafting intuitive user interfaces to developing responsive websites, I strive to deliver designs that not only look great but also provide seamless user experiences.
+                    </p>
+                </div>
+            </div>
+            <hr class="about-divider">
+            <div class="about-bottom">
+                <div class="about-col personal-details">
+                    <h3>Personal Details</h3>
+                    <ul>
+                        <li><strong>Age:</strong> 22 years old</li>
+                        <li><strong>Birthdate:</strong> March 17, 2003</li>
+                        <li><strong>Address:</strong> Davao City</li>
+                    </ul>
+                </div>
+                <div class="about-col education">
+                    <h3>Education</h3>
+                    <div class="education-card">
+                        <img src="images/jmclogo.png" alt="JMC Logo" class="edu-logo">
+                        <div>
+                            <div class="edu-school">Jose Maria College Foundation Inc.</div>
+                            <div class="edu-degree">Bachelor of Science in Information Technology</div>
+                            <div class="edu-year">2021 - 2025</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills">
+        <h2 class="section-title">Skills & Technologies</h2>
+        <div class="skills-grid">
+            <div class="skill-card">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/photoshop/photoshop-plain.svg" alt="Photoshop" title="Photoshop" class="skill-icon">
+                <h3>Photoshop</h3>
+                <div class="progress-bar">
+                    <div class="progress" style="width: 50%"></div>
+                </div>
+            </div>
+            <div class="skill-card">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/canva/canva-original.svg" alt="Canva" title="Canva" class="skill-icon">
+                <h3>Canva</h3>
+                <div class="progress-bar">
+                    <div class="progress" style="width: 85%"></div>
+                </div>
+            </div>
+            <div class="skill-card">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/figma/figma-original.svg" alt="Figma" title="Figma" class="skill-icon">
+                <h3>Figma</h3>
+                <div class="progress-bar">
+                    <div class="progress" style="width: 80%"></div>
+                </div>
+            </div>
+            <div class="skill-card">
+                <i class="fab fa-html5"></i>
+                <h3>HTML5</h3>
+                <div class="progress-bar">
+                    <div class="progress" style="width: 80%"></div>
+                </div>
+            </div>
+            <div class="skill-card">
+                <i class="fab fa-css3-alt"></i>
+                <h3>CSS3</h3>
+                <div class="progress-bar">
+                    <div class="progress" style="width: 80%"></div>
+                </div>
+            </div>
+            <div class="skill-card">
+                <i class="fab fa-js"></i>
+                <h3>JavaScript</h3>
+                <div class="progress-bar">
+                    <div class="progress" style="width: 70%"></div>
+                </div>
+            </div>
+            <div class="skill-card">
+                <i class="fab fa-react"></i>
+                <h3>React</h3>
+                <div class="progress-bar">
+                    <div class="progress" style="width: 70%"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <div class="projects-header">
+            <h2>My Projects</h2>
+            <a href="#" class="see-all-btn" id="seeAllBtn">See All</a>
+        </div>
+        <div class="projects-grid">
+            <div class="project-card"><img src="images/Project1.png" alt="Introduction to UI Design"></div>
+            <div class="project-card"><img src="images/Project4.png" alt="National Costume"></div>
+            <div class="project-card"><img src="images/Project14.png" alt="Kabantog Intamurals"></div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="contact-info">
+            <h2>Get In Touch</h2>
+            <p class="contact-subtitle">I'd love to hear from you! Feel free to connect with me through any of these platforms.</p>
+            <div class="social-links">
+                <a href="mailto:junreymanriquezz@gmail.com" class="social-container email">
+                    <i class="fas fa-envelope"></i>
+                    <span>Email</span>
+                </a>
+                <a href="tel:+639854295085" class="social-container phone">
+                    <i class="fas fa-phone"></i>
+                    <span>Phone</span>
+                </a>
+                <a href="https://github.com/JoonRei" class="social-container github">
+                    <i class="fab fa-github"></i>
+                    <span>GitHub</span>
+                </a>
+                <a href="https://www.facebook.com/junrey.manriquez.37" class="social-container facebook">
+                    <i class="fab fa-facebook"></i>
+                    <span>Facebook</span>
+                </a>
+                <a href="https://www.instagram.com/junrey.manriquez?igsh=MWwwenFjdnBnMWxwMg==" class="social-container instagram">
+                    <i class="fab fa-instagram"></i>
+                    <span>Instagram</span>
+                </a>
+                <a href="https://www.tiktok.com/@jun.reiii?_t=ZS-8xAjfIKBqFk&_r=1" class="social-container tiktok">
+                    <i class="fab fa-tiktok"></i>
+                    <span>TikTok</span>
+                </a>
+                <a href="https://m.me/junrey.manriquez.37?hash=AbYcZt9MW8ONSkee&source=qr_link_share" class="social-container messenger">
+                    <i class="fab fa-facebook-messenger"></i>
+                    <span>Messenger</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Modal -->
+    <div class="modal-overlay" id="projectsModal">
+        <div class="modal-content">
+            <button class="close-modal" id="closeModalBtn">&times;</button>
+            <h2>All Projects</h2>
+            <div class="projects-toggle">
+                <button id="pubmatsToggle" class="toggle-btn active">Pubmats</button>
+                <button id="socialMediaToggle" class="toggle-btn">Social Media</button>
+            </div>
+            <div class="projects-grid all-projects-grid pubmats-projects">
+                <div class="project-card"><img src="images/Project1.png" alt=""></div>
+                <div class="project-card"><img src="images/Project2.png" alt=""></div>
+                <div class="project-card"><img src="images/Project3.png" alt=""></div>
+                <div class="project-card"><img src="images/Project4.png" alt=""></div>
+                <div class="project-card"><img src="images/Project5.png" alt=""></div>
+                <div class="project-card"><img src="images/Project6.png" alt=""></div>
+                <div class="project-card"><img src="images/Project7.png" alt=""></div>
+                <div class="project-card"><img src="images/Project8.png" alt=""></div>
+                <div class="project-card"><img src="images/Project13.png" alt=""></div>
+                <div class="project-card"><img src="images/Project14.png" alt=""></div>
+                <div class="project-card"><img src="images/Project15.png" alt=""></div>
+            </div>
+            <div class="projects-grid all-projects-grid socialmedia-projects" style="display:none;">
+                <div class="project-card"><img src="images/1.png" alt=""></div>
+                <div class="project-card"><img src="images/2.png" alt=""></div>
+                <div class="project-card"><img src="images/3.png" alt=""></div>
+                <div class="project-card"><img src="images/4.png" alt=""></div>
+                <div class="project-card"><img src="images/7.png" alt=""></div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 Junrey Manriquez | PORTFOLIO. All rights reserved.</p>
+    </footer>
+
+    <!-- Hamburger Menu Script -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const hamburger = document.querySelector('.hamburger');
+            const navLinks = document.querySelector('.nav-links');
+            
+            hamburger.addEventListener('click', () => {
+                hamburger.classList.toggle('active');
+                navLinks.classList.toggle('active');
+            });
+
+            // Close menu when clicking a link
+            document.querySelectorAll('.nav-links a').forEach(link => {
+                link.addEventListener('click', () => {
+                    hamburger.classList.remove('active');
+                    navLinks.classList.remove('active');
+                });
+            });
+        });
+    </script>
+
+    <!-- Dynamic Text Effect Script -->
+    <script>
+        // Dynamic Text Effect
+        const dynamicText = document.querySelector('.dynamic-text');
+        const words = ['Web Developer', 'UI/UX Designer', 'Graphic Designer'];
+        let wordIndex = 0;
+        let charIndex = 0;
+        let isDeleting = false;
+        let isEnd = false;
+
+        function typeEffect() {
+            isEnd = false;
+            const currentWord = words[wordIndex];
+            
+            if (isDeleting) {
+                dynamicText.textContent = currentWord.substring(0, charIndex - 1);
+                charIndex--;
+            } else {
+                dynamicText.textContent = currentWord.substring(0, charIndex + 1);
+                charIndex++;
+            }
+
+            if (!isDeleting && charIndex === currentWord.length) {
+                isEnd = true;
+                isDeleting = true;
+                setTimeout(() => typeEffect(), 2000);
+            } else if (isDeleting && charIndex === 0) {
+                isDeleting = false;
+                wordIndex = (wordIndex + 1) % words.length;
+                setTimeout(() => typeEffect(), 500);
+            } else {
+                setTimeout(() => typeEffect(), isDeleting ? 50 : 100);
+            }
+        }
+
+        // Start the typing effect when the page loads
+        window.addEventListener('load', typeEffect);
+    </script>
+
+    <script>
+        // Dark Mode Toggle
+        const themeToggle = document.getElementById('themeToggle');
+        const prefersDarkScheme = window.matchMedia('(prefers-color-scheme: dark)');
+        
+        // Check for saved theme preference or use system preference
+        const currentTheme = localStorage.getItem('theme') || 
+            (prefersDarkScheme.matches ? 'dark' : 'light');
+        
+        // Apply theme on load
+        document.body.classList.toggle('dark-theme', currentTheme === 'dark');
+        themeToggle.classList.toggle('active', currentTheme === 'dark');
+        
+        // Toggle theme
+        themeToggle.addEventListener('click', () => {
+            const isDark = document.body.classList.toggle('dark-theme');
+            themeToggle.classList.toggle('active');
+            localStorage.setItem('theme', isDark ? 'dark' : 'light');
+        });
+    </script>
+
+    <script>
+        // Scroll to top on page refresh
+        window.onbeforeunload = function () {
+            window.scrollTo(0, 0);
+        }
+
+        // Handle scroll animations
+        const sections = document.querySelectorAll('.hero, .about, .skills, .projects, .contact');
+        
+        const observerOptions = {
+            root: null,
+            rootMargin: '0px',
+            threshold: 0.1
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                }
+            });
+        }, observerOptions);
+
+        sections.forEach(section => {
+            observer.observe(section);
+        });
+
+        // Show hero section immediately on page load
+        document.querySelector('.hero').classList.add('visible');
+    </script>
+
+    <script>
+        const seeAllBtn = document.getElementById('seeAllBtn');
+        const projectsModal = document.getElementById('projectsModal');
+        const closeModalBtn = document.getElementById('closeModalBtn');
+
+        seeAllBtn.addEventListener('click', function(e) {
+            e.preventDefault();
+            // Open modal
+            projectsModal.classList.add('open');
+            // Prevent body scrolling only when modal is open
+            document.body.style.overflow = 'hidden';
+        });
+
+        closeModalBtn.addEventListener('click', function() {
+            // Close modal
+            projectsModal.classList.remove('open');
+            // Restore body scrolling
+            document.body.style.overflow = '';
+        });
+
+        projectsModal.addEventListener('click', function(e) {
+            if (e.target === projectsModal) {
+                // Close modal
+                projectsModal.classList.remove('open');
+                // Restore body scrolling
+                document.body.style.overflow = '';
+            }
+        });
+
+        // Ensure scrolling is restored when modal is closed
+        window.addEventListener('beforeunload', function() {
+            document.body.style.overflow = '';
+        });
+    </script>
+
+    <script>
+        const pubmatsToggle = document.getElementById('pubmatsToggle');
+        const socialMediaToggle = document.getElementById('socialMediaToggle');
+        const pubmatsProjects = document.querySelector('.pubmats-projects');
+        const socialMediaProjects = document.querySelector('.socialmedia-projects');
+
+        function animateProjectCards(grid) {
+            const cards = grid.querySelectorAll('.project-card');
+            grid.classList.remove('show');
+            cards.forEach(card => {
+                card.style.animationDelay = '0s';
+                card.style.opacity = 0;
+                card.style.transform = 'translateY(30px)';
+            });
+            setTimeout(() => {
+                grid.classList.add('show');
+                cards.forEach((card, i) => {
+                    card.style.animationDelay = (i * 0.12) + 's';
+                    card.style.opacity = '';
+                    card.style.transform = '';
+                });
+            }, 10);
+        }
+
+        pubmatsToggle.addEventListener('click', function() {
+            pubmatsToggle.classList.add('active');
+            socialMediaToggle.classList.remove('active');
+            pubmatsProjects.style.display = '';
+            socialMediaProjects.style.display = 'none';
+            animateProjectCards(pubmatsProjects);
+        });
+
+        socialMediaToggle.addEventListener('click', function() {
+            socialMediaToggle.classList.add('active');
+            pubmatsToggle.classList.remove('active');
+            socialMediaProjects.style.display = '';
+            pubmatsProjects.style.display = 'none';
+            animateProjectCards(socialMediaProjects);
+        });
+
+        // Animate on modal open (default to Pubmats)
+        document.getElementById('seeAllBtn').addEventListener('click', function() {
+            animateProjectCards(pubmatsProjects);
+        });
+    </script>
+</body>
+</html>
